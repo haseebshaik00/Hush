@@ -1,0 +1,23 @@
+<%- include ("partials/header") %> 
+	
+	<div class="container-fluid mt-5" id="container1">
+
+		<form action="/blogs" method="POST">
+			<h1 class="mb-3"> New Hush </h1>
+			<div class="form-group">
+			<label>Title</label>
+			<input type="text" class="form-control" name="blog[title]" placeholder="Enter Title of the Story">
+			</div>
+			<div class="form-group">
+			<label>Image Url</label>
+			<input type="text" class="form-control" name="blog[image]" placeholder="Enter Image Url">
+			</div>
+			<div class="form-group">
+			<label>Your Story</label>
+			<textarea name="blog[body]" class="form-control"> </textarea>
+			</div>
+			<button type="submit" class="btn btn-dark">Submit</button>
+		</form>
+	</div>
+
+<%- include ("partials/footer") %> 

@@ -1,0 +1,14 @@
+<%- include ("partials/header") %> 
+
+	<div class="container p-4 mt-5"  id="container2">
+		<h2 class="mb-4"> <%= blog.title %></h2>
+		<img class="rounded mx-auto d-block img-fluid" src="<%= blog.image %>">
+		<p class="font-weight-bold mt-5"><span> <%= blog.created.toDateString() %></span></p>
+		<p><%= blog.body %></p>
+		<form action="/blogs/<%=blog._id%>?_method=DELETE" method="POST">
+			<a type="button" class="btn btn-dark btn-block" href="/blogs/<%= blog._id%>/edit">Edit</a>
+			<button type="submit" class="btn btn-dark btn-block">Delete</button>
+		</form>
+	</div>
+
+<%- include ("partials/footer") %> 

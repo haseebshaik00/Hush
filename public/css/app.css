@@ -1,0 +1,26 @@
+body{
+	background-color: lightgrey;
+	background-image: url("https://www.tvovermind.com/wp-content/uploads/2016/04/Hush_Trailer1.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+}
+
+#container1{
+	background-color: white;
+	padding: 30px;
+	border-radius: 5px;
+	border: 2px solid grey;
+	width: 60%;
+}
+
+#container2
+{
+	border: 2px solid grey;
+	border-radius: 5px;
+	background-color: white;
+}
+
+hr {
+  border: 1px solid grey;
+}

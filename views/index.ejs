@@ -1,0 +1,15 @@
+<%- include ("partials/header") %> 
+
+<div class="container mt-5 mb-5 pt-2 pr-4 pl-4 pb-0" id="container2"> 
+<% blogs.forEach(function(blog){ %>
+	<div >
+		<h2 class="pt-3"> <%= blog.title %></h2>
+		<img  class="pt-3 rounded mx-auto d-block img-fluid rounded float-left" src="<%= blog.image %>">
+		<p><span><h6> <%= blog.created.toDateString() %> </h6></span></p>
+		<p><h5><%= blog.body.substring(0, 100) %>...</h5></p>
+		<a href="/blogs/<%= blog._id %>"><h6>Read more</h6></a> 
+		<hr class="font-weight-bold">
+	</div>
+<% }); %>
+<div>
+<%- include ("partials/footer") %> 
